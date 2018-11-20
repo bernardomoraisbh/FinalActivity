@@ -30,6 +30,7 @@ public class Fragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment2, container,false);
         initImageBitmaps();
+        initRecyclerView2();
         this.mView = view;
         return view;
     }
@@ -45,6 +46,9 @@ public class Fragment2 extends Fragment {
 
         mImageUrls2.add("https://i.redd.it/qn7f9oqu7o501.jpg");
         mNames2.add("Portugal");
+
+        mImageUrls2.add("https://kalumatravel.com/data/img/countries/BRA/BRA.jpg");
+        mNames2.add("Brasil RJ");
 
         mImageUrls2.add("https://i.redd.it/j6myfqglup501.jpg");
         mNames2.add("Rocky Mountain National Park");
@@ -63,8 +67,6 @@ public class Fragment2 extends Fragment {
 
         mImageUrls2.add("https://i.imgur.com/ZcLLrkY.jpg");
         mNames2.add("Washington");
-
-        initRecyclerView2();
     }
 
     private void initRecyclerView2(){
